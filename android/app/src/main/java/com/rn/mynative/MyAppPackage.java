@@ -23,6 +23,8 @@ public class MyAppPackage implements ReactPackage {
     @NonNull
     @Override
     public List<ViewManager> createViewManagers(@NonNull ReactApplicationContext reactContext) {
-        return Collections.emptyList();
+        List<ViewManager> managers = new ArrayList<>();
+        managers.add(new MyNativeUIComponentManager(reactContext));
+        return managers;
     }
 }

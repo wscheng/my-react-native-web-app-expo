@@ -5,6 +5,7 @@ import EditScreenInfo from "../components/EditScreenInfo";
 import { Text, View } from "../components/Themed";
 import MyHelloWorld from "../components/MyHelloWorld";
 import MyNativeComponentModule from "../components/MyNativeComponentModule"
+import MyNativeUIComponentModule from "../components/MyNativeUIComponentModule";
 
 const NewModuleButton = () => {
 const onPress = () => {
@@ -91,6 +92,7 @@ export default function TabOneScreen() {
         darkColor="rgba(255,255,255,0.1)"
       />
       <EditScreenInfo path="/screens/TabOneScreen.js" />
+      <MyNativeUIComponentModule />
       <NewModuleButton />
       <NewModuleAsyncButton />
       <NewModuleRealAsyncButton />
